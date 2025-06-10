@@ -1,0 +1,225 @@
+:root {
+  --primary-black: #000000;
+  --primary-white: #FFFFFF;
+  --charcoal: #1A1A1A;
+  --accent-gradient: linear-gradient(135deg, #000000 0%, #404040 100%);
+  --glass-bg: rgba(255, 255, 255, 0.1); /* Adjusted for a lighter glass effect against dark backgrounds */
+  --shadow-4d: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --font-primary: 'Inter', system-ui, sans-serif; /* Added sans-serif fallback */
+  --font-secondary: 'Space Grotesk', monospace;
+
+  /* Additional variables for easier management */
+  --text-color-light: var(--primary-white);
+  --text-color-dark: var(--primary-black);
+  --background-dark: var(--primary-black);
+  --background-light: var(--primary-white);
+  --section-padding: 60px 20px;
+}
+
+/* Basic Reset / Global Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px; /* Base font size */
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--text-color-light);
+  background-color: var(--background-dark);
+  line-height: 1.6;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-secondary);
+  margin-bottom: 0.75em;
+  line-height: 1.2;
+  color: var(--primary-white); /* Default heading color */
+}
+
+h1 {
+  font-size: 2.5rem; /* Example size */
+}
+
+h2 {
+  font-size: 2rem; /* Example size */
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  color: var(--primary-white); /* Or a specific accent color */
+  text-decoration: none; /* Common practice to remove underline by default */
+}
+
+a:hover {
+  text-decoration: underline; /* Optional: add underline on hover */
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul, ol {
+  list-style-position: inside;
+  margin-bottom: 1em;
+}
+
+/* Header and Logo Styling */
+header {
+    padding: 20px 0; /* Add some padding */
+    border-bottom: 1px solid var(--charcoal); /* Subtle separator */
+}
+
+.logo-tagline {
+    text-align: center;
+}
+
+.logo-tagline h1 {
+    font-family: var(--font-primary); /* Using primary font as requested for the logo */
+    font-size: 2.5rem; /* Adjust size as needed */
+    font-weight: bold;
+    color: var(--primary-white);
+    margin-bottom: 0.25em; /* Smaller margin for tagline */
+}
+
+.logo-tagline p {
+    font-family: var(--font-secondary); /* Secondary font for tagline */
+    font-size: 1rem;
+    color: var(--primary-white);
+    opacity: 0.8; /* Slightly less prominent */
+    margin-bottom: 0;
+}
+
+/* General Section Styling */
+main section {
+    padding: var(--section-padding);
+    border-bottom: 1px solid var(--charcoal); /* Separator between sections */
+}
+
+main section:last-child {
+    border-bottom: none; /* No border for the last section */
+}
+
+main section h2 {
+    font-size: 2.2rem; /* Slightly larger for section titles */
+    color: var(--primary-white);
+    margin-bottom: 1em;
+    text-align: center; /* Center section titles */
+}
+
+main section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--primary-white);
+    opacity: 0.9;
+    max-width: 800px; /* Limit width for readability */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* Center paragraph text within sections */
+}
+
+/* Header and Footer Styling Refinements */
+header {
+    background-color: var(--primary-black); /* Explicitly set background */
+    padding: 30px 20px; /* Increased padding */
+    text-align: center;
+    border-bottom: 2px solid var(--charcoal); /* Stronger separator */
+}
+
+.logo-tagline h1 {
+    font-size: 3rem; /* Larger logo text */
+    letter-spacing: 1px;
+}
+
+.logo-tagline p {
+    font-size: 1.2rem; /* Larger tagline */
+    opacity: 0.85;
+}
+
+/* Hero Section Specific Styling */
+#hero {
+    background: var(--accent-gradient); /* Use the defined gradient for hero */
+    color: var(--primary-white);
+    text-align: center;
+    padding: 80px 20px; /* More padding for hero */
+}
+
+#hero h2 {
+    font-size: 2.5rem; /* Prominent heading for hero's content */
+    margin-bottom: 0.5em;
+}
+
+#hero p {
+    font-size: 1.3rem;
+    margin-bottom: 1.5em;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--primary-white);
+    color: var(--primary-black);
+    font-family: var(--font-secondary);
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--charcoal); /* Darker on hover */
+    color: var(--primary-white);
+    text-decoration: none;
+    transform: translateY(-3px); /* Slight lift effect */
+}
+
+
+footer {
+    background-color: var(--charcoal);
+    color: var(--text-color-light);
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 30px; /* Space above footer */
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin-bottom: 0;
+    opacity: 0.7;
+}
+
+
+/* Service Page Specific Styling */
+.service-page-content {
+    padding: var(--section-padding);
+    text-align: left; /* Override centered text for service pages */
+}
+
+.service-page-content h1 {
+    font-size: 2.8rem;
+    text-align: center; /* Center the main H1 of the service page */
+    margin-bottom: 1.5em;
+    color: var(--primary-white);
+}
+
+.service-page-content p {
+    font-size: 1.1rem;
+    line-height: 1.8; /* More line height for readability */
+    max-width: none; /* Allow full width */
+    text-align: left; /* Align paragraph text to the left */
+    margin-bottom: 1.5em;
+}
