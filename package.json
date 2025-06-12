@@ -4,9 +4,10 @@
   "description": "Revolutionary Digital Marketing Website with Premium Design",
   "main": "index.html",
   "scripts": {
-    "dev": "live-server --port=3000 --open=/ --watch=css,js,index.html",
+    "dev": "node server.js",
+    "start": "node server.js",
     "build": "echo 'Static site - no build required'",
-    "start": "echo 'Static site ready for deployment'"
+    "serve": "live-server --port=3000 --open=/ --watch=css,js,index.html"
   },
   "keywords": [
     "digital-marketing",
