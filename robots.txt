@@ -1,0 +1,44 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://goddigitalmarketing.com/sitemap.xml
+
+# Allow all major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /.git/
+Disallow: /node_modules/
+
+# Allow important directories
+Allow: /css/
+Allow: /js/
+Allow: /assets/
+Allow: /images/
+Allow: /services/
+Allow: /locations/
+Allow: /industries/
+Allow: /company/
+Allow: /resources/
+
+# Crawl delay (optional)
+Crawl-delay: 1
