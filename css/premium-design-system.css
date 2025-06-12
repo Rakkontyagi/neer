@@ -1,0 +1,408 @@
+/* ========================================
+   GOD DIGITAL MARKETING - PREMIUM DESIGN SYSTEM
+   Revolutionary 4D Black & White Aesthetic
+   ======================================== */
+
+/* PREMIUM COLOR PALETTE - MONOCHROME EXCELLENCE */
+:root {
+  /* Primary Colors */
+  --divine-black: #000000;        /* Pure black for maximum contrast */
+  --cosmic-white: #FFFFFF;        /* Pure white for clarity */
+  
+  /* Premium Grays */
+  --platinum: #F8F8F8;           /* Lightest gray for backgrounds */
+  --silver: #E5E5E5;             /* Light gray for borders */
+  --graphite: #808080;           /* Medium gray for text */
+  --charcoal: #333333;           /* Dark gray for subtitles */
+  --obsidian: #1A1A1A;          /* Near black for depth */
+  
+  /* Accent Shades */
+  --shadow-light: rgba(0,0,0,0.05);
+  --shadow-medium: rgba(0,0,0,0.15);
+  --shadow-heavy: rgba(0,0,0,0.25);
+  --glow-white: rgba(255,255,255,0.95);
+  
+  /* Premium Gradients */
+  --gradient-elegant: linear-gradient(135deg, #000000 0%, #333333 100%);
+  --gradient-subtle: linear-gradient(180deg, #FFFFFF 0%, #F8F8F8 100%);
+  --gradient-depth: linear-gradient(45deg, #1A1A1A 0%, #000000 100%);
+  --gradient-hero: linear-gradient(135deg, #000000 0%, #1A1A1A 50%, #000000 100%);
+  
+  /* Typography Scale */
+  --font-premium: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Inter', system-ui, sans-serif;
+  
+  /* Font Weights */
+  --font-weight-thin: 100;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+  
+  /* Spacing System */
+  --space-xs: 0.25rem;    /* 4px */
+  --space-sm: 0.5rem;     /* 8px */
+  --space-md: 1rem;       /* 16px */
+  --space-lg: 1.5rem;     /* 24px */
+  --space-xl: 2rem;       /* 32px */
+  --space-2xl: 3rem;      /* 48px */
+  --space-3xl: 4rem;      /* 64px */
+  --space-4xl: 6rem;      /* 96px */
+  --space-5xl: 8rem;      /* 128px */
+  
+  /* Premium Shadows */
+  --shadow-premium: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-elegant: 0 10px 25px rgba(0, 0, 0, 0.1);
+  --shadow-luxury: 0 20px 40px rgba(0, 0, 0, 0.15);
+  --shadow-divine: 0 25px 50px rgba(0, 0, 0, 0.25);
+  
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  
+  /* Transitions */
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-elegant: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Z-Index Scale */
+  --z-dropdown: 1000;
+  --z-sticky: 1020;
+  --z-fixed: 1030;
+  --z-modal: 1040;
+  --z-popover: 1050;
+  --z-tooltip: 1060;
+}
+
+/* PREMIUM RESET & BASE STYLES */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: var(--font-premium);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.6;
+  color: var(--cosmic-white);
+  background-color: var(--divine-black);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* PREMIUM TYPOGRAPHY HIERARCHY */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+  color: var(--cosmic-white);
+  margin-bottom: var(--space-lg);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: var(--font-weight-black);
+  letter-spacing: -0.04em;
+}
+
+h2 {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -0.03em;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: -0.02em;
+}
+
+h4 {
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  font-weight: var(--font-weight-semibold);
+}
+
+h5 {
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  font-weight: var(--font-weight-medium);
+}
+
+h6 {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* PREMIUM TEXT STYLES */
+.text-hero {
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: var(--font-weight-black);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.text-display {
+  font-size: clamp(2.25rem, 4.5vw, 4rem);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.1;
+}
+
+.text-large {
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-regular);
+  line-height: 1.6;
+}
+
+.text-body {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--graphite);
+}
+
+.text-small {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.text-caption {
+  font-size: 0.75rem;
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--charcoal);
+}
+
+/* PREMIUM BUTTON SYSTEM */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-md) var(--space-xl);
+  font-family: var(--font-premium);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--cosmic-white);
+  color: var(--divine-black);
+  border: 2px solid var(--cosmic-white);
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: var(--cosmic-white);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-elegant);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--cosmic-white);
+  border: 2px solid var(--cosmic-white);
+}
+
+.btn-secondary:hover {
+  background: var(--cosmic-white);
+  color: var(--divine-black);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-elegant);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--cosmic-white);
+  border: 1px solid var(--charcoal);
+}
+
+.btn-ghost:hover {
+  background: var(--obsidian);
+  border-color: var(--cosmic-white);
+  transform: translateY(-1px);
+}
+
+/* PREMIUM CARD SYSTEM */
+.card {
+  background: var(--cosmic-white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2xl);
+  box-shadow: var(--shadow-premium);
+  transition: all var(--transition-smooth);
+  border: 1px solid var(--silver);
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-luxury);
+  border-color: var(--divine-black);
+}
+
+.card-dark {
+  background: var(--obsidian);
+  color: var(--cosmic-white);
+  border-color: var(--charcoal);
+}
+
+.card-dark:hover {
+  background: var(--divine-black);
+  border-color: var(--cosmic-white);
+}
+
+/* PREMIUM LAYOUT UTILITIES */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.container-wide {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.section {
+  padding: var(--space-5xl) 0;
+}
+
+.section-sm {
+  padding: var(--space-4xl) 0;
+}
+
+.section-lg {
+  padding: var(--space-5xl) 0 var(--space-5xl) 0;
+}
+
+/* PREMIUM GRID SYSTEM */
+.grid {
+  display: grid;
+  gap: var(--space-xl);
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.grid-4 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* PREMIUM FLEX UTILITIES */
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap-sm { gap: var(--space-sm); }
+.gap-md { gap: var(--space-md); }
+.gap-lg { gap: var(--space-lg); }
+.gap-xl { gap: var(--space-xl); }
+.gap-2xl { gap: var(--space-2xl); }
+
+/* PREMIUM ANIMATION CLASSES */
+.animate-fade-in {
+  animation: fadeIn var(--transition-elegant) ease-out forwards;
+  opacity: 0;
+}
+
+.animate-slide-up {
+  animation: slideUp var(--transition-elegant) ease-out forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .container,
+  .container-wide {
+    padding: 0 var(--space-md);
+  }
+  
+  .section {
+    padding: var(--space-4xl) 0;
+  }
+  
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+  
+  .btn {
+    padding: var(--space-sm) var(--space-lg);
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,403 @@
+{
+  "imageManifest": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-01-27",
+    "description": "God Digital Marketing - Premium Image Assets Manifest",
+    "categories": {
+      "hero": {
+        "description": "Hero section premium images",
+        "images": [
+          {
+            "name": "premium-digital-marketing-hero.jpg",
+            "alt": "Premium digital marketing transformation with 4D visual effects",
+            "dimensions": "1920x1080",
+            "format": "JPEG",
+            "webp": "premium-digital-marketing-hero.webp",
+            "lazy": true,
+            "critical": true
+          },
+          {
+            "name": "digital-excellence-background.jpg",
+            "alt": "Digital excellence premium background with geometric patterns",
+            "dimensions": "2560x1440",
+            "format": "JPEG",
+            "webp": "digital-excellence-background.webp",
+            "lazy": false,
+            "critical": true
+          }
+        ]
+      },
+      "services": {
+        "description": "Service-specific premium imagery",
+        "images": [
+          {
+            "name": "seo-mastery-icon.svg",
+            "alt": "SEO mastery premium service icon",
+            "dimensions": "80x80",
+            "format": "SVG",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "ppc-excellence-icon.svg",
+            "alt": "PPC excellence premium service icon",
+            "dimensions": "80x80",
+            "format": "SVG",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "automation-services-icon.svg",
+            "alt": "Automation services premium icon with AI elements",
+            "dimensions": "80x80",
+            "format": "SVG",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "business-growth-icon.svg",
+            "alt": "Business growth strategies premium icon",
+            "dimensions": "80x80",
+            "format": "SVG",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "social-media-authority-icon.svg",
+            "alt": "Social media authority premium service icon",
+            "dimensions": "80x80",
+            "format": "SVG",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "content-supremacy-icon.svg",
+            "alt": "Content supremacy premium service icon",
+            "dimensions": "80x80",
+            "format": "SVG",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "email-precision-icon.svg",
+            "alt": "Email precision marketing premium icon",
+            "dimensions": "80x80",
+            "format": "SVG",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "analytics-clarity-icon.svg",
+            "alt": "Analytics clarity premium service icon",
+            "dimensions": "80x80",
+            "format": "SVG",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "web-development-icon.svg",
+            "alt": "Premium web development with 4D design icon",
+            "dimensions": "80x80",
+            "format": "SVG",
+            "lazy": true,
+            "critical": false
+          }
+        ]
+      },
+      "team": {
+        "description": "Premium team member portraits",
+        "images": [
+          {
+            "name": "ceo-premium-portrait.jpg",
+            "alt": "Chief Executive Officer - Strategic Leadership Expert",
+            "dimensions": "400x400",
+            "format": "JPEG",
+            "webp": "ceo-premium-portrait.webp",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "seo-director-portrait.jpg",
+            "alt": "SEO Director - Search Excellence Specialist",
+            "dimensions": "400x400",
+            "format": "JPEG",
+            "webp": "seo-director-portrait.webp",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "ppc-strategist-portrait.jpg",
+            "alt": "PPC Strategist - Paid Media Expert",
+            "dimensions": "400x400",
+            "format": "JPEG",
+            "webp": "ppc-strategist-portrait.webp",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "social-media-lead-portrait.jpg",
+            "alt": "Social Media Lead - Social Authority Expert",
+            "dimensions": "400x400",
+            "format": "JPEG",
+            "webp": "social-media-lead-portrait.webp",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "automation-specialist-portrait.jpg",
+            "alt": "Automation Specialist - Process Excellence Expert",
+            "dimensions": "400x400",
+            "format": "JPEG",
+            "webp": "automation-specialist-portrait.webp",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "analytics-manager-portrait.jpg",
+            "alt": "Analytics Manager - Data Intelligence Expert",
+            "dimensions": "400x400",
+            "format": "JPEG",
+            "webp": "analytics-manager-portrait.webp",
+            "lazy": true,
+            "critical": false
+          }
+        ]
+      },
+      "testimonials": {
+        "description": "Client testimonial images and company logos",
+        "images": [
+          {
+            "name": "sarah-johnson-techvision.jpg",
+            "alt": "Sarah Johnson, CEO of TechVision Solutions",
+            "dimensions": "150x150",
+            "format": "JPEG",
+            "webp": "sarah-johnson-techvision.webp",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "michael-chen-growthlab.jpg",
+            "alt": "Michael Chen, Founder of GrowthLab Inc",
+            "dimensions": "150x150",
+            "format": "JPEG",
+            "webp": "michael-chen-growthlab.webp",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "emma-rodriguez-elitecommerce.jpg",
+            "alt": "Emma Rodriguez, Marketing Director of EliteCommerce",
+            "dimensions": "150x150",
+            "format": "JPEG",
+            "webp": "emma-rodriguez-elitecommerce.webp",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "david-park-innovatenow.jpg",
+            "alt": "David Park, COO of InnovateNow",
+            "dimensions": "150x150",
+            "format": "JPEG",
+            "webp": "david-park-innovatenow.webp",
+            "lazy": true,
+            "critical": false
+          }
+        ]
+      },
+      "logos": {
+        "description": "Premium brand logos and certifications",
+        "images": [
+          {
+            "name": "god-digital-marketing-logo.svg",
+            "alt": "God Digital Marketing - Premium Logo",
+            "dimensions": "300x100",
+            "format": "SVG",
+            "lazy": false,
+            "critical": true
+          },
+          {
+            "name": "god-digital-marketing-logo-white.svg",
+            "alt": "God Digital Marketing - White Logo Version",
+            "dimensions": "300x100",
+            "format": "SVG",
+            "lazy": false,
+            "critical": true
+          },
+          {
+            "name": "god-digital-marketing-favicon.ico",
+            "alt": "God Digital Marketing - Favicon",
+            "dimensions": "32x32",
+            "format": "ICO",
+            "lazy": false,
+            "critical": true
+          },
+          {
+            "name": "google-premier-partner-badge.png",
+            "alt": "Google Premier Partner Certification Badge",
+            "dimensions": "200x100",
+            "format": "PNG",
+            "webp": "google-premier-partner-badge.webp",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "facebook-marketing-partner-badge.png",
+            "alt": "Facebook Marketing Partner Certification Badge",
+            "dimensions": "200x100",
+            "format": "PNG",
+            "webp": "facebook-marketing-partner-badge.webp",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "digital-marketing-institute-badge.png",
+            "alt": "Digital Marketing Institute Certification Badge",
+            "dimensions": "200x100",
+            "format": "PNG",
+            "webp": "digital-marketing-institute-badge.webp",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "iso-27001-certification-badge.png",
+            "alt": "ISO 27001 Security Certification Badge",
+            "dimensions": "200x100",
+            "format": "PNG",
+            "webp": "iso-27001-certification-badge.webp",
+            "lazy": true,
+            "critical": false
+          }
+        ]
+      },
+      "icons": {
+        "description": "Premium UI icons and graphics",
+        "images": [
+          {
+            "name": "premium-consultation-icon.svg",
+            "alt": "Premium consultation process icon",
+            "dimensions": "60x60",
+            "format": "SVG",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "strategic-blueprint-icon.svg",
+            "alt": "Strategic blueprint planning icon",
+            "dimensions": "60x60",
+            "format": "SVG",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "flawless-execution-icon.svg",
+            "alt": "Flawless execution process icon",
+            "dimensions": "60x60",
+            "format": "SVG",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "continuous-optimization-icon.svg",
+            "alt": "Continuous optimization process icon",
+            "dimensions": "60x60",
+            "format": "SVG",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "premium-results-icon.svg",
+            "alt": "Premium results achievement icon",
+            "dimensions": "60x60",
+            "format": "SVG",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "evolution-scale-icon.svg",
+            "alt": "Evolution and scale growth icon",
+            "dimensions": "60x60",
+            "format": "SVG",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "premium-guarantee-seal.svg",
+            "alt": "Premium performance guarantee seal",
+            "dimensions": "120x120",
+            "format": "SVG",
+            "lazy": true,
+            "critical": false
+          }
+        ]
+      },
+      "backgrounds": {
+        "description": "Premium background patterns and textures",
+        "images": [
+          {
+            "name": "premium-geometric-pattern.svg",
+            "alt": "Premium geometric background pattern",
+            "dimensions": "1920x1080",
+            "format": "SVG",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "4d-particle-background.jpg",
+            "alt": "4D particle system background",
+            "dimensions": "2560x1440",
+            "format": "JPEG",
+            "webp": "4d-particle-background.webp",
+            "lazy": true,
+            "critical": false
+          },
+          {
+            "name": "premium-gradient-overlay.png",
+            "alt": "Premium gradient overlay for depth",
+            "dimensions": "1920x1080",
+            "format": "PNG",
+            "webp": "premium-gradient-overlay.webp",
+            "lazy": true,
+            "critical": false
+          }
+        ]
+      }
+    },
+    "optimization": {
+      "formats": {
+        "webp": {
+          "quality": 85,
+          "description": "Modern WebP format for better compression"
+        },
+        "jpeg": {
+          "quality": 90,
+          "description": "High-quality JPEG for compatibility"
+        },
+        "png": {
+          "compression": 9,
+          "description": "Lossless PNG for graphics with transparency"
+        },
+        "svg": {
+          "minified": true,
+          "description": "Scalable vector graphics for icons and logos"
+        }
+      },
+      "lazyLoading": {
+        "enabled": true,
+        "threshold": "50px",
+        "fadeIn": true,
+        "description": "Intersection Observer based lazy loading"
+      },
+      "responsive": {
+        "breakpoints": [320, 768, 1024, 1440, 1920],
+        "description": "Responsive image serving based on device width"
+      }
+    },
+    "seo": {
+      "altTextRequired": true,
+      "structuredData": true,
+      "openGraph": true,
+      "twitterCards": true,
+      "description": "All images optimized for SEO with proper alt text and metadata"
+    }
+  }
+}

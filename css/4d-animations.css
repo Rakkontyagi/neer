@@ -1,0 +1,407 @@
+/* ========================================
+   GOD DIGITAL MARKETING - 4D ANIMATIONS
+   Premium Black & White 4D Visual Effects
+   ======================================== */
+
+/* 4D ANIMATION VARIABLES */
+:root {
+  --animation-duration-fast: 0.3s;
+  --animation-duration-normal: 0.6s;
+  --animation-duration-slow: 1.2s;
+  --animation-easing: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-easing-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --animation-easing-elastic: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* 4D PARTICLE SYSTEM CONTAINER */
+.particles-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: var(--cosmic-white);
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: particleFloat 8s linear infinite;
+}
+
+.particle:nth-child(odd) {
+  background: var(--graphite);
+  animation-duration: 12s;
+}
+
+.particle:nth-child(3n) {
+  width: 1px;
+  height: 1px;
+  animation-duration: 15s;
+}
+
+@keyframes particleFloat {
+  0% {
+    transform: translateY(100vh) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-100px) translateX(100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* 4D GEOMETRIC SHAPES */
+.shape-4d {
+  position: absolute;
+  border: 1px solid var(--cosmic-white);
+  opacity: 0.1;
+  animation: rotate4D 20s linear infinite;
+}
+
+.shape-cube {
+  width: 100px;
+  height: 100px;
+  transform-style: preserve-3d;
+}
+
+.shape-cube::before,
+.shape-cube::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--cosmic-white);
+  opacity: 0.3;
+}
+
+.shape-cube::before {
+  transform: translateZ(50px);
+}
+
+.shape-cube::after {
+  transform: translateZ(-50px);
+}
+
+@keyframes rotate4D {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  33% {
+    transform: rotateX(120deg) rotateY(120deg) rotateZ(0deg);
+  }
+  66% {
+    transform: rotateX(240deg) rotateY(240deg) rotateZ(120deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+/* 4D HERO ANIMATIONS */
+.hero-4d {
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.hero-title-4d {
+  transform: translateZ(50px);
+  animation: heroTitleFloat 4s ease-in-out infinite;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.hero-subtitle-4d {
+  transform: translateZ(30px);
+  animation: heroSubtitleFloat 4s ease-in-out infinite 0.5s;
+}
+
+.hero-cta-4d {
+  transform: translateZ(40px);
+  animation: heroCTAFloat 4s ease-in-out infinite 1s;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-cta-4d::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.6s;
+}
+
+.hero-cta-4d:hover::before {
+  left: 100%;
+}
+
+@keyframes heroTitleFloat {
+  0%, 100% {
+    transform: translateZ(50px) translateY(0px) rotateX(0deg);
+  }
+  50% {
+    transform: translateZ(60px) translateY(-10px) rotateX(2deg);
+  }
+}
+
+@keyframes heroSubtitleFloat {
+  0%, 100% {
+    transform: translateZ(30px) translateY(0px);
+  }
+  50% {
+    transform: translateZ(40px) translateY(-5px);
+  }
+}
+
+@keyframes heroCTAFloat {
+  0%, 100% {
+    transform: translateZ(40px) translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateZ(50px) translateY(-3px) scale(1.02);
+  }
+}
+
+/* 4D CARD ANIMATIONS */
+.card-4d {
+  transform-style: preserve-3d;
+  transition: transform var(--animation-duration-normal) var(--animation-easing);
+  position: relative;
+}
+
+.card-4d::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(0,0,0,0.1));
+  opacity: 0;
+  transition: opacity var(--animation-duration-normal);
+  border-radius: inherit;
+}
+
+.card-4d:hover {
+  transform: translateY(-10px) rotateX(5deg) rotateY(5deg) scale(1.02);
+}
+
+.card-4d:hover::before {
+  opacity: 1;
+}
+
+/* 4D SERVICE ICONS */
+.service-icon-4d {
+  width: 80px;
+  height: 80px;
+  border: 2px solid var(--cosmic-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-lg);
+  position: relative;
+  transform-style: preserve-3d;
+  animation: serviceIconRotate 8s linear infinite;
+}
+
+.service-icon-4d::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid var(--graphite);
+  border-radius: 50%;
+  transform: translateZ(-10px) scale(1.1);
+  opacity: 0.3;
+}
+
+.service-icon-4d::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--cosmic-white);
+  border-radius: 50%;
+  transform: translateZ(10px) scale(0.9);
+  opacity: 0.5;
+}
+
+@keyframes serviceIconRotate {
+  0% {
+    transform: rotateY(0deg) rotateX(0deg);
+  }
+  25% {
+    transform: rotateY(90deg) rotateX(15deg);
+  }
+  50% {
+    transform: rotateY(180deg) rotateX(0deg);
+  }
+  75% {
+    transform: rotateY(270deg) rotateX(-15deg);
+  }
+  100% {
+    transform: rotateY(360deg) rotateX(0deg);
+  }
+}
+
+/* 4D LOADING ANIMATION */
+.loading-4d {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--divine-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  transition: opacity 0.6s ease-out;
+}
+
+.loading-4d.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loading-spinner-4d {
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--charcoal);
+  border-top: 2px solid var(--cosmic-white);
+  border-radius: 50%;
+  animation: loadingSpinner 1s linear infinite;
+  position: relative;
+}
+
+.loading-spinner-4d::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid transparent;
+  border-top: 2px solid var(--graphite);
+  border-radius: 50%;
+  animation: loadingSpinner 2s linear infinite reverse;
+}
+
+@keyframes loadingSpinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 4D SCROLL ANIMATIONS */
+.scroll-reveal-4d {
+  opacity: 0;
+  transform: translateY(50px) rotateX(10deg);
+  transition: all var(--animation-duration-slow) var(--animation-easing);
+}
+
+.scroll-reveal-4d.revealed {
+  opacity: 1;
+  transform: translateY(0) rotateX(0deg);
+}
+
+.scroll-reveal-4d.revealed.delay-1 {
+  transition-delay: 0.1s;
+}
+
+.scroll-reveal-4d.revealed.delay-2 {
+  transition-delay: 0.2s;
+}
+
+.scroll-reveal-4d.revealed.delay-3 {
+  transition-delay: 0.3s;
+}
+
+/* 4D HOVER EFFECTS */
+.hover-4d {
+  transition: all var(--animation-duration-normal) var(--animation-easing);
+  transform-style: preserve-3d;
+}
+
+.hover-4d:hover {
+  transform: translateY(-5px) rotateX(5deg) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* 4D BACKGROUND ELEMENTS */
+.bg-4d-element {
+  position: absolute;
+  opacity: 0.05;
+  animation: bgElement4D 15s ease-in-out infinite;
+}
+
+.bg-4d-element:nth-child(odd) {
+  animation-direction: reverse;
+  animation-duration: 20s;
+}
+
+@keyframes bgElement4D {
+  0%, 100% {
+    transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translateX(50px) translateY(-30px) rotate(90deg) scale(1.1);
+  }
+  50% {
+    transform: translateX(0) translateY(-60px) rotate(180deg) scale(0.9);
+  }
+  75% {
+    transform: translateX(-50px) translateY(-30px) rotate(270deg) scale(1.1);
+  }
+}
+
+/* RESPONSIVE 4D ANIMATIONS */
+@media (max-width: 768px) {
+  .hero-title-4d,
+  .hero-subtitle-4d,
+  .hero-cta-4d {
+    transform: none;
+    animation: none;
+  }
+  
+  .card-4d:hover {
+    transform: translateY(-5px) scale(1.02);
+  }
+  
+  .service-icon-4d {
+    animation-duration: 12s;
+  }
+  
+  .particle {
+    animation-duration: 10s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
